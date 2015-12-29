@@ -32,7 +32,7 @@
               <div class="card-panel">
                 <h4 class="header2">Edit Estimation Details</h4>
                 <div class="row">
-                  <form class="col s12" action="<?=base_url('Estimation/update'); ?>" method="post">
+                  <form class="col s12" action="<?=base_url('Estimation/update/'.$loop->e_id); ?>" method="post">
                     <div class="row">
                       <div class="input-field col s12">
                         <input id="project_name" name="project_name" type="text"  value="<?= $loop->project_name; ?>">
@@ -124,23 +124,23 @@
                         <br>
                       </div>
                       <div class="input-field col s12 estimation">
-                        <input type="checkbox" id="test1" name="project_diameters[]" />
+                        <input type="checkbox" id="test1" name="project_diameters[]" value="T8" />
                         <label for="test1">T8</label>&nbsp;
-                        <input type="checkbox" id="test2" name="project_diameters[]" />
+                        <input type="checkbox" id="test2" name="project_diameters[]" value="T10" />
                         <label for="test2">T10</label>
-                        <input type="checkbox" id="test3" name="project_diameters[]" />
+                        <input type="checkbox" id="test3" name="project_diameters[]" value="T12" />
                         <label for="test3">T12</label>
-                        <input type="checkbox" id="test4" name="project_diameters[]" />
+                        <input type="checkbox" id="test4" name="project_diameters[]" value="T14" />
                         <label for="test4">T14</label>
-                        <input type="checkbox" id="test5" name="project_diameters[]" />
+                        <input type="checkbox" id="test5" name="project_diameters[]" value="T16" />
                         <label for="test5">T16</label>
-                        <input type="checkbox" id="test6" name="project_diameters[]" />
+                        <input type="checkbox" id="test6" name="project_diameters[]" value="T20" />
                         <label for="test6">T20</label>
-                        <input type="checkbox" id="test7" name="project_diameters[]" />
+                        <input type="checkbox" id="test7" name="project_diameters[]" value="T25" />
                         <label for="test7">T25</label>
-                        <input type="checkbox" id="test8" name="project_diameters[]" />
+                        <input type="checkbox" id="test8" name="project_diameters[]" value="T32" />
                         <label for="test8">T32</label>
-                        <input type="checkbox" id="test9" name="project_diameters[]" />
+                        <input type="checkbox" id="test9" name="project_diameters[]" value="T40" />
                         <label for="test9">T40</label>
                         <br><br>
                       </div>
