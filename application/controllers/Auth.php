@@ -14,9 +14,9 @@ class Auth extends CI_Controller
     }
      public function login()
      {
-        //if (auth()->is_logged()) {
-          //   return redirect(base_url('dashboard'));
-        // }
+        if (auth()->is_logged()) {
+             return redirect(base_url('dashboard'));
+         }
          $this->form_validation->set_rules('emailid', 'Email ID', 'trim|required|valid_email');
          $this->form_validation->set_rules('password', 'Password', 'trim|required');
 
